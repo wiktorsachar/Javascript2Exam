@@ -11,7 +11,7 @@ can travel, 1 – bouncing object. The program is to show how the object
 would travel and bounce against the walls. Bouncing objects starts in 
 any corner. 1 and Y position may vary. */
 
-const board = [
+const hardBoard = [
   ["X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X"],
   ["X", "1", "0", "X", "X", "X", "X", "X", "X", "X", "X", "X"],
   ["X", "0", "0", "0", "X", "X", "X", "X", "X", "X", "X", "X"],
@@ -30,7 +30,7 @@ const board = [
   ["X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X"]
 ];
 
-const board2 = [
+const easyBoard = [
   ["X", "X", "X", "X", "X", "X", "X"],
   ["X", "1", "0", "0", "0", "0", "X"],
   ["X", "0", "0", "0", "0", "0", "X"],
@@ -278,5 +278,5 @@ class App {
   }
 }
 
-const app = new App(board);
+const app = new App(hardBoard);
 app.run(80);
