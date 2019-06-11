@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Game of Life</title>
+    <link href="./style.css" type="text/css" rel="stylesheet" />
+</head>
+<body onload="app.init()">
+    <h2>John Conway's Game of Life</h2>
+    <br />
+    <canvas id="board" width="500" height="500" style="border:1px solid #000000;"></canvas>
+    <script src="./app.js"></script>
+    <br />
+    <br />
+    <button onclick="app.init()">Next</button>
+    <button onclick="app.reset();app.init()">Reset</button>
+</body>
