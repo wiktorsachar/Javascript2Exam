@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bouncing Simulator</title>
+    <link rel="icon" href="./textures/favicon/favicon.ico" type="image/x-icon" />
+    <script src="./script/app.js"></script>
+    <link href="./style/style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body onload="appHard.draw();appEasy.draw();">
+    <div class="easy">
+      <div>
+        <form>
+          <input
+            type="radio"
+            onclick="appEasy.changeTextures(basketball);basketball.background('boardEasy')"
+            name="textureSet"
+            value="basketball"
+            checked
+          />
+          Basketball
+          <input
+            type="radio"
+            onclick="appEasy.changeTextures(football);football.background('boardEasy')"
+            name="textureSet"
+            value="football"
+          />
+          Football
+          <input
+            type="radio"
+            onclick="appEasy.changeTextures(hockey);hockey.background('boardEasy')"
+            name="textureSet"
+            value="hockey"
+          />
+          Hockey
+          <input
+            type="radio"
+            onclick="appEasy.changeTextures(space);space.background('boardEasy')"
+            name="textureSet"
+            value="space"
+          />
+          Space
+        </form>
+      </div>
+      <div>
+        <button onclick="appEasy.move()">Move</button>
+        <button onclick="appEasy.animate(75)">Throw a ball</button>
+        <button onclick="appEasy.stopAnimate()">Stop</button>
+      </div>
+      <canvas id="boardEasy" width="350" height="500"></canvas>
+    </div>
+    <div class="hard">
+      <div>
+        <form>
+          <input
+            type="radio"
+            onclick="appHard.changeTextures(basketball);basketball.background('boardHard')"
+            name="textureSet"
+            value="basketball"
+            checked
+          />
+          Basketball
+          <input
+            type="radio"
+            onclick="appHard.changeTextures(football);football.background('boardHard')"
+            name="textureSet"
+            value="football"
+          />
+          Football
+          <input
+            type="radio"
+            onclick="appHard.changeTextures(hockey);hockey.background('boardHard')"
+            name="textureSet"
+            value="hockey"
+          />
+          Hockey
+          <input
+            type="radio"
+            onclick="appHard.changeTextures(space);space.background('boardHard')"
+            name="textureSet"
+            value="space"
+          />
+          Space
+        </form>
+      </div>
+      <div>
+        <button onclick="appHard.move()">Move</button>
+        <button onclick="appHard.animate(75)">Throw a ball</button>
+        <button onclick="appHard.stopAnimate()">Stop</button>
+      </div>
+      <canvas id="boardHard" width="600" height="800" style="border:1px solid #000000;"></canvas>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+* { 
+    background-color: grey;
+    margin: 2px;
+}
+canvas {
+  border: 1px solid black;
+  background-image: url("../textures/basketball/parquet.jpg");
+}
+.easy {
+    width: 400px;
+    height: 550px;
+    display: inline-block;
+    margin: 1em;
+}
+.hard {
+    width: 650px;
+    height: 850px;
+    display: inline-block;
+    margin: 1em;
+}
